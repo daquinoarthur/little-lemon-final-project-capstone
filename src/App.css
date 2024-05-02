@@ -1,0 +1,45 @@
+:root {
+  --color__primary--1: #495e57;
+  --color__primary--2: #f4ce14;
+
+  --color__secondary--1: #ee9972;
+  --color__secondary--2: #fbdabb;
+
+  --color__highlight--1: #edefee;
+  --color__highlight--2: #333333;
+
+  --typography__font__family--1: "Markazi Text", serif;
+  --typography__font__family--2: "Karla", sans-serif;
+
+  --typography__font__display-title__size: 4rem;
+  --typography__font__display-title__line-height: 1.2;
+
+  --typography__font__display-subtitle__size: 2.5rem;
+  --typography__font__display-subtitle__line-height: 1.2;
+
+  --typography__font__lead-text__size: 1.125rem;
+  --typography__font__lead-text__line-height: 1.4;
+
+  --typography__font__section-title__size: 1.25rem;
+  --typography__font__section-title__line-height: 1.2;
+
+  --typography__font__card-title__size: 1.125rem;
+  --typography__font__card-title__line-height: 1.2;
+
+  --typography__font__paragraph__size: 1rem;
+  --typography__font__paragraph__line-height: 1.4;
+
+  --typography__font__highlight-text__size: 1rem;
+  --typography__font__highlight-text__line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
