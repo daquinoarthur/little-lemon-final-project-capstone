@@ -1,0 +1,19 @@
+.main-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 24px;
+}
+
+.main-nav__link {
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  font-family: var(--typography__font__family--2);
+  font-weight: bold;
+  color: var(--color__primary--1);
+  transition: border-bottom 0.3s;
+}
+
+.main-nav__link:hover {
+  border-bottom: 2px solid var(--color__highlight--2);
+}
