@@ -22,3 +22,8 @@
   background-color: var(--color__highlight--2);
   color: var(--color__highlight--1);
 }
+
+.button.no-bg {
+  background-color: transparent;
+  padding: 0;
+}
