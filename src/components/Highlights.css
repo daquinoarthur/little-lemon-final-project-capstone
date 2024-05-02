@@ -1,0 +1,22 @@
+.highlights .container {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.highlights__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.highlights__title {
+  margin-bottom: 16px;
+}
+
+.highlights__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 32px;
+}
