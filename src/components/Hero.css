@@ -6,7 +6,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 52px 0;
+  padding-top: 52px;
+  padding-bottom: 52px;
 }
 
 .hero__body {
