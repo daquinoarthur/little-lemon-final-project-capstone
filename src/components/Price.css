@@ -1,0 +1,5 @@
+.price {
+  font-size: var(--typography__lead-text__size);
+  font-weight: bold;
+  color: var(--color__secondary--1);
+}
