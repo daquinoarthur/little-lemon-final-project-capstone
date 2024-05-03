@@ -1,0 +1,17 @@
+.testimonial-card {
+  padding: 1rem;
+  background-color: var(--color__highlight--1);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card__image {
+  width: 5rem;
+}
