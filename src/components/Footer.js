@@ -100,7 +100,9 @@ export function Footer() {
             </h5>
 
             <p className="footer__phone font__highlight-text">
-              +1 (123) 456-7890
+              <a className="footer__anchor" href="tel:+11234567890">
+                +1 (123) 456-7890
+              </a>
             </p>
 
             <h5 className="footer__subtitle footer__email font__display--subtitle">
@@ -108,7 +110,12 @@ export function Footer() {
             </h5>
 
             <p className="footer__email-address font__highlight-text">
-              info@littelemonrestauant.com
+              <a
+                className="footer__anchor"
+                href="mailto:info@littlelemonrestaurant"
+              >
+                info@littelemonrestaurant.com
+              </a>
             </p>
           </article>
 
