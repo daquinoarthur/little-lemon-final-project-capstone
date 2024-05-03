@@ -70,6 +70,8 @@ img {
   font-family: var(--typography__font__family--2);
   font-size: var(--typography__font__section-title__size);
   line-height: var(--typography__font__section-title__line-height);
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .font__card-title {

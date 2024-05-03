@@ -14,7 +14,7 @@ export function Hero() {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <Link to="/reserve-a-table" className="hero__button">
+          <Link to="/booking" className="hero__button">
             <Button className="hero__button">Reserve a Table</Button>
           </Link>
         </article>

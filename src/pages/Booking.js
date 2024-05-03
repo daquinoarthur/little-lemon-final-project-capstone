@@ -1,10 +1,11 @@
+import { BookingForm } from "../components/BookingForm";
 import { Layout } from "../layouts/Layout";
 
-export function ReserverATable() {
+export function Booking() {
   return (
     <div>
       <Layout>
-        <>Reserve a table page</>
+        <BookingForm />
       </Layout>
     </div>
   );
