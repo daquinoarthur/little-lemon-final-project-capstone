@@ -1,0 +1,19 @@
+.testimonials {
+  background-color: var(--color__secondary--1);
+}
+
+.testimonials .container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.testimonials__title {
+  color: var(--color__primary--1);
+}
+
+.testimonials__row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1.125rem;
+  margin-top: 2rem;
+}
