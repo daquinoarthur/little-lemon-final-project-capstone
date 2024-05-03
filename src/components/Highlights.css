@@ -13,6 +13,7 @@
 
 .highlights__title {
   margin-bottom: 16px;
+  color: var(--color__primary--1);
 }
 
 .highlights__row {
