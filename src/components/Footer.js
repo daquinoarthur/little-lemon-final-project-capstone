@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container } from "./Container";
 import "./Footer.css";
 
@@ -15,54 +16,54 @@ export function Footer() {
 
             <ul className="footer__nav__list">
               <li className="footer__nav__item">
-                <a className="footer__nav__link font__highlight-text" href="/">
+                <Link className="footer__nav__link font__highlight-text" to="/">
                   Home
-                </a>
+                </Link>
               </li>
 
               <li className="footer__nav__item">
-                <a
+                <Link
                   className="footer__nav__link font__highlight-text"
-                  href="/about"
+                  to="/about"
                 >
                   About
-                </a>
+                </Link>
               </li>
 
               <li className="footer__nav__item">
-                <a
+                <Link
                   className="footer__nav__link font__highlight-text"
-                  href="/menu"
+                  to="/menu"
                 >
                   Menu
-                </a>
+                </Link>
               </li>
 
               <li className="footer__nav__item">
-                <a
+                <Link
                   className="footer__nav__link font__highlight-text"
-                  href="/reservations"
+                  to="/reservations"
                 >
                   Reservations
-                </a>
+                </Link>
               </li>
 
               <li className="footer__nav__item">
-                <a
+                <Link
                   className="footer__nav__link font__highlight-text"
-                  href="/order-online"
+                  to="/order-online"
                 >
                   Order Online
-                </a>
+                </Link>
               </li>
 
               <li className="footer__nav__item">
-                <a
+                <Link
                   className="footer__nav__link font__highlight-text"
-                  href="/login"
+                  to="/login"
                 >
                   Login
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

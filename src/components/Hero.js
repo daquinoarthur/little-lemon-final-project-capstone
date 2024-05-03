@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "./Button";
 import { Container } from "./Container";
 import "./Hero.css";
@@ -13,7 +14,9 @@ export function Hero() {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <Button className="hero__button">Reserve a Table</Button>
+          <Link to="/reserve-a-table" className="hero__button">
+            <Button className="hero__button">Reserve a Table</Button>
+          </Link>
         </article>
         <img
           className="hero__image"
