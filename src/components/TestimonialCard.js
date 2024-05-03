@@ -11,7 +11,9 @@ export function TestimonialCard({ name, image, children }) {
         />
         <h4 className="testimonial-card__name font__card-title">{name}</h4>
       </header>
-      <p className="testimonial-card__testimony font__lead-text">{children}</p>
+      <p className="testimonial-card__testimony font__highlight-text">
+        {children}
+      </p>
     </article>
   );
 }
