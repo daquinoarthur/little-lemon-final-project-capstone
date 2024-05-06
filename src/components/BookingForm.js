@@ -1,17 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./BookingForm.css";
 import { Container } from "./Container";
 
 export function BookingForm() {
   const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
+  const [time, setTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
-  const [occasion, setOccasion] = useState("");
+  const [occasion, setOccasion] = useState("Birthday");
+  const [sittingOption, setSittingOption] = useState("Standard");
+
+  useEffect(() => {
+    const today = new Date();
+    const day = String(today.getDate()).padStart(2, "0");
+    const month = String(today.getMonth() + 1).padStart(2, "0");
+    const year = today.getFullYear();
+    const todayString = `${year}-${month}-${day}`;
+    setDate(todayString);
+  }, []);
+
+  const handleRadioChange = (event) => {
+    setSittingOption(event.target.value);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission here
-    console.log({ date, time, guests, occasion });
+    console.log({ date, time, guests, occasion, sittingOption });
   };
 
   return (
@@ -51,12 +64,12 @@ export function BookingForm() {
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
               >
-                <option value="17:0">17:0</option>
-                <option value="18:0">18:0</option>
-                <option value="19:0">19:0</option>
-                <option value="20:0">20:0</option>
-                <option value="21:0">21:0</option>
-                <option value="2:0">2:0</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+                <option value="2:00">2:00</option>
               </select>
             </div>
 
@@ -105,14 +118,21 @@ export function BookingForm() {
                 <input
                   type="radio"
                   name="sitting-option"
-                  value="standard"
-                  checked
+                  value="Standard"
+                  onChange={handleRadioChange}
+                  checked={sittingOption === "Standard"}
                 />
               </label>
 
               <label className="booking__form__label">
                 <span className="font__lead-text">Outside</span>
-                <input type="radio" name="sitting-option" value="outside" />
+                <input
+                  type="radio"
+                  name="sitting-option"
+                  value="Outside"
+                  onChange={handleRadioChange}
+                  checked={sittingOption === "Outside"}
+                />
               </label>
             </div>
 
