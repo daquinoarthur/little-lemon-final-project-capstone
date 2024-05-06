@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import "./BookingForm.css";
 import { Container } from "./Container";
 
-export function BookingForm() {
+export function BookingForm({
+  availableTimes = [],
+  updateAvailableTimes = () => null,
+}) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("17:00");
   const [guests, setGuests] = useState(1);
@@ -31,7 +34,7 @@ export function BookingForm() {
     <section className="booking">
       <Container>
         <h2 className="font__display booking__title">
-          Find a tagle for any occasion
+          Find a table for any occasion
         </h2>
         <form className="booking__form" onSubmit={handleSubmit}>
           <fieldset className="booking__form__fieldset">
@@ -62,14 +65,16 @@ export function BookingForm() {
                 className="booking__form__input booking__form__input--time"
                 id="res-time"
                 value={time}
-                onChange={(e) => setTime(e.target.value)}
+                onChange={(e) => {
+                  setTime(e.target.value);
+                  updateAvailableTimes(e.target.value);
+                }}
               >
-                <option value="17:00">17:00</option>
-                <option value="18:00">18:00</option>
-                <option value="19:00">19:00</option>
-                <option value="20:00">20:00</option>
-                <option value="21:00">21:00</option>
-                <option value="2:00">2:00</option>
+                {availableTimes.map((time) => (
+                  <option key={time} value={time}>
+                    {time}
+                  </option>
+                ))}
               </select>
             </div>
 
